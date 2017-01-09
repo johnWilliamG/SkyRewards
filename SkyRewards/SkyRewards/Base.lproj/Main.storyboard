@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tBs-Pb-4ca">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="l5j-uY-VCf">
+            <objects>
+                <navigationController id="tBs-Pb-4ca" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yse-fG-Hud">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FEG-Jr-Hi1" kind="relationship" relationship="rootViewController" id="E3w-WB-x6U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iam-Nq-Mtv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-713" y="37"/>
+        </scene>
+        <!--Customer Input View Controller-->
+        <scene sceneID="1sx-0M-btP">
+            <objects>
+                <viewController id="FEG-Jr-Hi1" customClass="SRCustomerInputViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4zx-FT-cfs"/>
+                        <viewControllerLayoutGuide type="bottom" id="o6T-1F-e8f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="02U-3a-T2j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CfM-yG-yOJ">
+                                <rect key="frame" x="28" y="72" width="319" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Customer ID here!" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="WkF-3Y-YFP">
+                                        <rect key="frame" x="0.0" y="0.0" width="319" height="50"/>
+                                        <color key="textColor" red="0.0024950916230366271" green="0.0" blue="5.1231608284946506e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="FEG-Jr-Hi1" id="RpY-cH-mmR"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="319" id="9i2-2z-TJE"/>
+                                    <constraint firstAttribute="height" constant="50" id="yRw-OS-jPZ"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Select Your Subscriptions" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FKc-N4-TdF">
+                                <rect key="frame" x="60" y="202" width="255" height="27"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PFF-SM-biw" customClass="SRSubscriptionsTableView">
+                                <rect key="frame" x="28" y="237" width="319" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="puk-kV-RX8"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SRSubscriptionTableViewCell" id="Qlt-I1-fte">
+                                        <rect key="frame" x="0.0" y="28" width="319" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qlt-I1-fte" id="86B-3Q-mHX">
+                                            <rect key="frame" x="0.0" y="0.0" width="319" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qh-4l-jQf">
+                                <rect key="frame" x="124" y="617" width="127" height="30"/>
+                                <state key="normal" title="Check my rewards"/>
+                                <connections>
+                                    <action selector="checkSubscriptionPressed:" destination="FEG-Jr-Hi1" eventType="touchUpInside" id="fui-4A-O6K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PFF-SM-biw" firstAttribute="leading" secondItem="CfM-yG-yOJ" secondAttribute="leading" id="2cc-v3-6fm"/>
+                            <constraint firstItem="PFF-SM-biw" firstAttribute="centerX" secondItem="02U-3a-T2j" secondAttribute="centerX" id="Mn8-aY-PrO"/>
+                            <constraint firstItem="CfM-yG-yOJ" firstAttribute="leading" secondItem="02U-3a-T2j" secondAttribute="leadingMargin" constant="12" id="QdH-mp-Aq1"/>
+                            <constraint firstItem="CfM-yG-yOJ" firstAttribute="top" secondItem="4zx-FT-cfs" secondAttribute="bottom" constant="8" id="U1d-nj-pN8"/>
+                            <constraint firstItem="o6T-1F-e8f" firstAttribute="top" secondItem="5qh-4l-jQf" secondAttribute="bottom" constant="20" id="VfR-h8-FH2"/>
+                            <constraint firstItem="FKc-N4-TdF" firstAttribute="top" secondItem="CfM-yG-yOJ" secondAttribute="bottom" constant="80" id="XAA-AF-8qp"/>
+                            <constraint firstItem="FKc-N4-TdF" firstAttribute="centerX" secondItem="02U-3a-T2j" secondAttribute="centerX" id="esz-wK-vF9"/>
+                            <constraint firstItem="5qh-4l-jQf" firstAttribute="centerX" secondItem="02U-3a-T2j" secondAttribute="centerX" id="i9i-wX-lnh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CfM-yG-yOJ" secondAttribute="trailing" constant="12" id="uR0-6j-BlV"/>
+                            <constraint firstItem="PFF-SM-biw" firstAttribute="top" secondItem="FKc-N4-TdF" secondAttribute="bottom" constant="8" id="wpJ-oE-fLk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hcQ-7j-LFV"/>
+                    <connections>
+                        <outlet property="customerIDTextField" destination="WkF-3Y-YFP" id="kYN-9F-ENb"/>
+                        <outlet property="subscriptionsTableView" destination="PFF-SM-biw" id="FIQ-JL-f2n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M5e-Mf-TGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>

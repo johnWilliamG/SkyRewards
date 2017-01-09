@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76A2945F1E201807006E5836 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2945E1E201807006E5836 /* main.m */; };
+		76A294621E201807006E5836 /* SRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A294611E201807006E5836 /* SRAppDelegate.m */; };
+		76A294681E201807006E5836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A294661E201807006E5836 /* Main.storyboard */; };
+		76A2946A1E201807006E5836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A294691E201807006E5836 /* Assets.xcassets */; };
+		76A2946D1E201807006E5836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A2946B1E201807006E5836 /* LaunchScreen.storyboard */; };
+		76A2949A1E20FE90006E5836 /* SRCustomerInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A294991E20FE90006E5836 /* SRCustomerInputViewController.m */; };
+		76A2949E1E2108E2006E5836 /* SRSubscriptionsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2949D1E2108E2006E5836 /* SRSubscriptionsTableView.m */; };
+		76A294A31E211AE5006E5836 /* SRDefaultsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A294A21E211AE5006E5836 /* SRDefaultsUtils.m */; };
+		76A294AA1E215958006E5836 /* SRRewardsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A294A91E215958006E5836 /* SRRewardsService.m */; };
+		76A294AC1E2188E3006E5836 /* SRCustomerInputViewController_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A294AB1E2188E3006E5836 /* SRCustomerInputViewController_Tests.swift */; };
+		76A294AE1E219C98006E5836 /* SRSubscriptionsTableView_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A294AD1E219C98006E5836 /* SRSubscriptionsTableView_Tests.swift */; };
+		76A294B01E224963006E5836 /* SRDefaultsUtils_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A294AF1E224963006E5836 /* SRDefaultsUtils_Tests.swift */; };
+		76A294B21E224B73006E5836 /* SRRewardsService_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A294B11E224B73006E5836 /* SRRewardsService_Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76A294741E201807006E5836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76A294521E201807006E5836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76A294591E201807006E5836;
+			remoteInfo = SkyRewards;
+		};
+		76A2947F1E201807006E5836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76A294521E201807006E5836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76A294591E201807006E5836;
+			remoteInfo = SkyRewards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76A2945A1E201807006E5836 /* SkyRewards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyRewards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A2945E1E201807006E5836 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		76A294601E201807006E5836 /* SRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRAppDelegate.h; sourceTree = "<group>"; };
+		76A294611E201807006E5836 /* SRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRAppDelegate.m; sourceTree = "<group>"; };
+		76A294671E201807006E5836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76A294691E201807006E5836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76A2946C1E201807006E5836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76A2946E1E201807006E5836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76A294731E201807006E5836 /* SkyRewardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyRewardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A294791E201807006E5836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76A2947E1E201807006E5836 /* SkyRewardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyRewardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A294901E2019D3006E5836 /* SkyRewardsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkyRewardsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		76A294981E20FE90006E5836 /* SRCustomerInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCustomerInputViewController.h; sourceTree = "<group>"; };
+		76A294991E20FE90006E5836 /* SRCustomerInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCustomerInputViewController.m; sourceTree = "<group>"; };
+		76A2949B1E210290006E5836 /* SRCustomerInputViewController+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SRCustomerInputViewController+Private.h"; sourceTree = "<group>"; };
+		76A2949C1E2108E2006E5836 /* SRSubscriptionsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSubscriptionsTableView.h; sourceTree = "<group>"; };
+		76A2949D1E2108E2006E5836 /* SRSubscriptionsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSubscriptionsTableView.m; sourceTree = "<group>"; };
+		76A294A11E211AE5006E5836 /* SRDefaultsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDefaultsUtils.h; sourceTree = "<group>"; };
+		76A294A21E211AE5006E5836 /* SRDefaultsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDefaultsUtils.m; sourceTree = "<group>"; wrapsLines = 0; };
+		76A294A81E215958006E5836 /* SRRewardsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRewardsService.h; sourceTree = "<group>"; };
+		76A294A91E215958006E5836 /* SRRewardsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRewardsService.m; sourceTree = "<group>"; };
+		76A294AB1E2188E3006E5836 /* SRCustomerInputViewController_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRCustomerInputViewController_Tests.swift; sourceTree = "<group>"; };
+		76A294AD1E219C98006E5836 /* SRSubscriptionsTableView_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSubscriptionsTableView_Tests.swift; sourceTree = "<group>"; };
+		76A294AF1E224963006E5836 /* SRDefaultsUtils_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRDefaultsUtils_Tests.swift; sourceTree = "<group>"; };
+		76A294B11E224B73006E5836 /* SRRewardsService_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRRewardsService_Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76A294571E201807006E5836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A294701E201807006E5836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A2947B1E201807006E5836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76A294511E201807006E5836 = {
+			isa = PBXGroup;
+			children = (
+				76A2945C1E201807006E5836 /* SkyRewards */,
+				76A294761E201807006E5836 /* SkyRewardsTests */,
+				76A2945B1E201807006E5836 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76A2945B1E201807006E5836 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76A2945A1E201807006E5836 /* SkyRewards.app */,
+				76A294731E201807006E5836 /* SkyRewardsTests.xctest */,
+				76A2947E1E201807006E5836 /* SkyRewardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76A2945C1E201807006E5836 /* SkyRewards */ = {
+			isa = PBXGroup;
+			children = (
+				76A294B91E225FB8006E5836 /* Model */,
+				76A2945D1E201807006E5836 /* Supporting Files */,
+				76A294B81E225F79006E5836 /* Service */,
+				76A294B71E225F65006E5836 /* App Delegate */,
+				76A294BA1E225FD2006E5836 /* View Controller */,
+				76A294661E201807006E5836 /* Main.storyboard */,
+				76A2946B1E201807006E5836 /* LaunchScreen.storyboard */,
+			);
+			path = SkyRewards;
+			sourceTree = "<group>";
+		};
+		76A2945D1E201807006E5836 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76A294691E201807006E5836 /* Assets.xcassets */,
+				76A2946E1E201807006E5836 /* Info.plist */,
+				76A2945E1E201807006E5836 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76A294761E201807006E5836 /* SkyRewardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				76A294BE1E2260C7006E5836 /* Supporting Files */,
+				76A294BD1E226099006E5836 /* Service */,
+				76A294BC1E226026006E5836 /* View Controller */,
+				76A294BB1E226004006E5836 /* Model */,
+			);
+			path = SkyRewardsTests;
+			sourceTree = "<group>";
+		};
+		76A294B71E225F65006E5836 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				76A294601E201807006E5836 /* SRAppDelegate.h */,
+				76A294611E201807006E5836 /* SRAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		76A294B81E225F79006E5836 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				76A294A81E215958006E5836 /* SRRewardsService.h */,
+				76A294A91E215958006E5836 /* SRRewardsService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		76A294B91E225FB8006E5836 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76A2949C1E2108E2006E5836 /* SRSubscriptionsTableView.h */,
+				76A2949D1E2108E2006E5836 /* SRSubscriptionsTableView.m */,
+				76A294A11E211AE5006E5836 /* SRDefaultsUtils.h */,
+				76A294A21E211AE5006E5836 /* SRDefaultsUtils.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		76A294BA1E225FD2006E5836 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76A2949B1E210290006E5836 /* SRCustomerInputViewController+Private.h */,
+				76A294981E20FE90006E5836 /* SRCustomerInputViewController.h */,
+				76A294991E20FE90006E5836 /* SRCustomerInputViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		76A294BB1E226004006E5836 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76A294AD1E219C98006E5836 /* SRSubscriptionsTableView_Tests.swift */,
+				76A294AF1E224963006E5836 /* SRDefaultsUtils_Tests.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		76A294BC1E226026006E5836 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76A294AB1E2188E3006E5836 /* SRCustomerInputViewController_Tests.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		76A294BD1E226099006E5836 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				76A294B11E224B73006E5836 /* SRRewardsService_Tests.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		76A294BE1E2260C7006E5836 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76A294791E201807006E5836 /* Info.plist */,
+				76A294901E2019D3006E5836 /* SkyRewardsTests-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76A294591E201807006E5836 /* SkyRewards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A294871E201807006E5836 /* Build configuration list for PBXNativeTarget "SkyRewards" */;
+			buildPhases = (
+				76A294561E201807006E5836 /* Sources */,
+				76A294571E201807006E5836 /* Frameworks */,
+				76A294581E201807006E5836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyRewards;
+			productName = SkyRewards;
+			productReference = 76A2945A1E201807006E5836 /* SkyRewards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76A294721E201807006E5836 /* SkyRewardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A2948A1E201807006E5836 /* Build configuration list for PBXNativeTarget "SkyRewardsTests" */;
+			buildPhases = (
+				76A2946F1E201807006E5836 /* Sources */,
+				76A294701E201807006E5836 /* Frameworks */,
+				76A294711E201807006E5836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76A294751E201807006E5836 /* PBXTargetDependency */,
+			);
+			name = SkyRewardsTests;
+			productName = SkyRewardsTests;
+			productReference = 76A294731E201807006E5836 /* SkyRewardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76A2947D1E201807006E5836 /* SkyRewardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A2948D1E201807006E5836 /* Build configuration list for PBXNativeTarget "SkyRewardsUITests" */;
+			buildPhases = (
+				76A2947A1E201807006E5836 /* Sources */,
+				76A2947B1E201807006E5836 /* Frameworks */,
+				76A2947C1E201807006E5836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76A294801E201807006E5836 /* PBXTargetDependency */,
+			);
+			name = SkyRewardsUITests;
+			productName = SkyRewardsUITests;
+			productReference = 76A2947E1E201807006E5836 /* SkyRewardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76A294521E201807006E5836 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Galloway, John (Associate Software Developer)";
+				TargetAttributes = {
+					76A294591E201807006E5836 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					76A294721E201807006E5836 = {
+						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 76A294591E201807006E5836;
+					};
+					76A2947D1E201807006E5836 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 76A294591E201807006E5836;
+					};
+				};
+			};
+			buildConfigurationList = 76A294551E201807006E5836 /* Build configuration list for PBXProject "SkyRewards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76A294511E201807006E5836;
+			productRefGroup = 76A2945B1E201807006E5836 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76A294591E201807006E5836 /* SkyRewards */,
+				76A294721E201807006E5836 /* SkyRewardsTests */,
+				76A2947D1E201807006E5836 /* SkyRewardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76A294581E201807006E5836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A2946D1E201807006E5836 /* LaunchScreen.storyboard in Resources */,
+				76A2946A1E201807006E5836 /* Assets.xcassets in Resources */,
+				76A294681E201807006E5836 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A294711E201807006E5836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A2947C1E201807006E5836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76A294561E201807006E5836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A2949A1E20FE90006E5836 /* SRCustomerInputViewController.m in Sources */,
+				76A2949E1E2108E2006E5836 /* SRSubscriptionsTableView.m in Sources */,
+				76A294621E201807006E5836 /* SRAppDelegate.m in Sources */,
+				76A294A31E211AE5006E5836 /* SRDefaultsUtils.m in Sources */,
+				76A2945F1E201807006E5836 /* main.m in Sources */,
+				76A294AA1E215958006E5836 /* SRRewardsService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A2946F1E201807006E5836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A294AC1E2188E3006E5836 /* SRCustomerInputViewController_Tests.swift in Sources */,
+				76A294B21E224B73006E5836 /* SRRewardsService_Tests.swift in Sources */,
+				76A294AE1E219C98006E5836 /* SRSubscriptionsTableView_Tests.swift in Sources */,
+				76A294B01E224963006E5836 /* SRDefaultsUtils_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A2947A1E201807006E5836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76A294751E201807006E5836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76A294591E201807006E5836 /* SkyRewards */;
+			targetProxy = 76A294741E201807006E5836 /* PBXContainerItemProxy */;
+		};
+		76A294801E201807006E5836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76A294591E201807006E5836 /* SkyRewards */;
+			targetProxy = 76A2947F1E201807006E5836 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76A294661E201807006E5836 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76A294671E201807006E5836 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76A2946B1E201807006E5836 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76A2946C1E201807006E5836 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76A294851E201807006E5836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		76A294861E201807006E5836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76A294881E201807006E5836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SkyRewards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.SkyRewards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		76A294891E201807006E5836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SkyRewards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.SkyRewards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		76A2948B1E201807006E5836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SkyRewardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.SkyRewardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkyRewardsTests/SkyRewardsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyRewards.app/SkyRewards";
+			};
+			name = Debug;
+		};
+		76A2948C1E201807006E5836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SkyRewardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.SkyRewardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkyRewardsTests/SkyRewardsTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyRewards.app/SkyRewards";
+			};
+			name = Release;
+		};
+		76A2948E1E201807006E5836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SkyRewardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.SkyRewardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SkyRewards;
+			};
+			name = Debug;
+		};
+		76A2948F1E201807006E5836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SkyRewardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.SkyRewardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SkyRewards;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76A294551E201807006E5836 /* Build configuration list for PBXProject "SkyRewards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A294851E201807006E5836 /* Debug */,
+				76A294861E201807006E5836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76A294871E201807006E5836 /* Build configuration list for PBXNativeTarget "SkyRewards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A294881E201807006E5836 /* Debug */,
+				76A294891E201807006E5836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76A2948A1E201807006E5836 /* Build configuration list for PBXNativeTarget "SkyRewardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A2948B1E201807006E5836 /* Debug */,
+				76A2948C1E201807006E5836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76A2948D1E201807006E5836 /* Build configuration list for PBXNativeTarget "SkyRewardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A2948E1E201807006E5836 /* Debug */,
+				76A2948F1E201807006E5836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76A294521E201807006E5836 /* Project object */;
+}
