@@ -16,11 +16,6 @@
     [self.rewardsService requestRewardsFromSubscriptions:self.subscriptions withCustomerID:self.customerIDTextField.text];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
-    return NO;
-}
-
 #pragma mark - View Controller Life Cycle
 
 - (void)viewDidLoad {
@@ -60,6 +55,13 @@
 
 - (NSUserDefaults *)userDefaults {
     return _userDefaults = _userDefaults ?: [NSUserDefaults standardUserDefaults];
+}
+
+#pragma mark - UITextField Delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
 }
 
 #pragma mark - SRRewardsService Delegate
